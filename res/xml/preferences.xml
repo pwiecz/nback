@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:nb="http://schemas.android.com/apk/res/cz.wie.p.nback"
+	android:title="N-Back preferences">
+	<PreferenceCategory android:title="Rules">
+		<cz.wie.p.nback.MultiChoicePreference
+			android:key="@string/features_preference" android:defaultValue="@string/default_features"
+			android:title="Features" nb:entries="@array/features_entries"
+			android:dialogTitle="Choose features" />
+		<ListPreference android:key="@string/n_back_level_preference"
+			android:title="N-Back level" android:defaultValue="2"
+			android:entries="@array/n_back_level_entries" android:entryValues="@array/n_back_level_entries"
+			android:dialogTitle="Choose an N-Back level" />
+		<CheckBoxPreference android:key="@string/auto_set_level_preference"
+			android:defaultValue="false" android:title="Auto set level" />
+		<PreferenceScreen android:title="Advanced">
+			<ListPreference android:key="@string/series_length_preference"
+				android:title="Series length" android:defaultValue="20"
+				android:entries="@array/series_length_entries" android:entryValues="@array/series_length_entries"
+				android:dialogTitle="Choose series length" />
+			<ListPreference android:key="@string/repetition_ratio_preference"
+				android:title="Repetition ratio" android:defaultValue="30"
+				android:entries="@array/repetition_ratio_entries"
+				android:entryValues="@array/repetition_ratio_entry_values"
+				android:dialogTitle="Choose repetition ratio" />
+			<CheckBoxPreference android:key="@string/random_targets_preference"
+				android:defaultValue="false" android:title="Random number of targets" />
+			<cz.wie.p.nback.IntPreference
+				android:key="@string/percent_to_advance_preference"
+				android:defaultValue="80" android:title="Percent to advance" nb:min="50"
+				nb:max="100" />
+			<CheckBoxPreference android:key="@string/by_feature_percentage_preference"
+				android:defaultValue="true" android:title="Satisfy all features to advance" />
+			<cz.wie.p.nback.IntPreference
+				android:key="@string/percent_to_drop_preference"
+				android:defaultValue="70" android:title="Percent to drop" nb:min="0"
+				nb:max="100" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="UI">
+	    <PreferenceScreen android:title="Program feedback" android:summary="Game feedback as you play.">
+			<CheckBoxPreference android:key="@string/vibrate_on_error_preference"
+				android:defaultValue="true" android:title="Vibrate on error" />
+			<CheckBoxPreference android:key="@string/highlight_correctness_preference"
+		  		android:defaultValue="true" android:title="Use buttons highlights" 
+		  		android:summary="Highlight correct/incorrect responses."/>	        
+			<CheckBoxPreference android:key="@string/show_progress_preference"
+		    	android:defaultValue="true" android:title="Display progress"
+		    	android:summary="Display number of correct/incorrect responses and remaining challenges."/>
+	    </PreferenceScreen>
+		<PreferenceScreen android:title="Keyboard shortcuts">
+		    <CheckBoxPreference android:key="@string/show_keyshortcuts_preference"
+				android:defaultValue="false" android:title="Show keyboard shortcuts"
+				android:summary="Show hardware keys which can be used instead of the touchscreen to select given stimuli." />
+			<ListPreference android:key="@string/position_keyshortcut_preference"
+				android:title="Position" android:defaultValue="A"
+				android:entries="@array/keyshortcut_entries" android:entryValues="@array/keyshortcut_entries"
+				android:dialogTitle="Position" />
+			<ListPreference android:key="@string/shape_keyshortcut_preference"
+				android:title="Shape" android:defaultValue="D"
+				android:entries="@array/keyshortcut_entries" android:entryValues="@array/keyshortcut_entries"
+				android:dialogTitle="Shape" />
+			<ListPreference android:key="@string/color_keyshortcut_preference"
+				android:title="Color" android:defaultValue="H"
+				android:entries="@array/keyshortcut_entries" android:entryValues="@array/keyshortcut_entries"
+				android:dialogTitle="Color" />
+			<ListPreference android:key="@string/sound_keyshortcut_preference"
+				android:title="Sound" android:defaultValue="L"
+				android:entries="@array/keyshortcut_entries" android:entryValues="@array/keyshortcut_entries"
+				android:dialogTitle="Sound" />
+		</PreferenceScreen>
+		<PreferenceScreen android:title="Results" android:summary="Results graph options.">
+			<CheckBoxPreference android:key="@string/show_results_by_feature"
+				android:title="Show results by feature" android:defaultValue="true" />
+			<CheckBoxPreference android:key="@string/show_results_for_all_levels"
+				android:title="Show results for all levels" android:defaultValue="false" />
+			<CheckBoxPreference android:key="@string/show_time_statistics_preference"
+			  android:title="Show time statistics" android:defaultValue="true" />
+			<ListPreference android:key="@string/time_interval_preference"
+				android:title="Time Statistics" android:defaultValue="0"
+				android:entries="@array/time_interval_entries" android:entryValues="@array/time_interval_entry_values"
+				android:dialogTitle="Time Span" />
+		</PreferenceScreen>
+		<PreferenceScreen android:title="Advanced">
+			<ListPreference android:key="@string/time_symbol_shown_preference"
+				android:title="Symbol show time" android:defaultValue="500"
+				android:entries="@array/show_time_entries" android:entryValues="@array/show_time_entry_values"
+				android:dialogTitle="Time symbols are shown" />
+			<ListPreference android:key="@string/time_symbol_hidden_preference"
+				android:title="Delay between symbols" android:defaultValue="2500"
+				android:entries="@array/show_time_entries" android:entryValues="@array/show_time_entry_values"
+				android:dialogTitle="Delay between symbols" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen>

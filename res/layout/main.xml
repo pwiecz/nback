@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center_vertical">
+	<cz.wie.p.nback.ResultsView
+		android:id="@+id/results" android:layout_width="fill_parent"
+		android:layout_height="0px" android:layout_weight="3" android:focusableInTouchMode="true"/>
+	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TableRow>
+			<TextView android:id="@+id/label1" android:layout_width="0px"
+				android:layout_weight="1" />
+			<TextView android:id="@+id/label3" android:layout_width="0px"
+				android:layout_weight="1" />
+			<TextView android:id="@+id/label5" android:layout_width="0px"
+				android:layout_weight="1" />
+		</TableRow>
+		<TableRow>
+			<TextView android:id="@+id/label2" android:layout_width="0px"
+				android:layout_weight="1" />
+			<TextView android:id="@+id/label4" android:layout_width="0px"
+				android:layout_weight="1" />
+            <TextView android:layout_width="0px" android:layout_weight="1" android:text="" />
+		</TableRow>
+	</TableLayout>
+	<Button android:id="@+id/new_button" android:layout_height="0px"
+		android:layout_weight="1" android:layout_width="fill_parent"
+		android:text="@string/new_game_button_label" />
+</LinearLayout>

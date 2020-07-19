@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/screen" android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="0px">
+	<!--style="?android:attr/windowTitleBackgroundStyle">-->
+	<TextView android:id="@+id/title_left_text"
+		android:layout_alignParentLeft="true" android:ellipsize="end"
+		android:singleLine="true"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:gravity="center_vertical" /> <!--  style="?android:attr/windowTitleStyle" android:layout_weight="1"-->
+	<TextView android:id="@+id/title_right_text"
+		android:layout_alignParentRight="true" android:ellipsize="end"
+		android:singleLine="true" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical" /> <!-- android:textColor="#fff" android:layout_weight="1"-->
+</RelativeLayout>

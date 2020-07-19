@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--  <string-array name="number_of_features_entries">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array> -->
+	<string-array name="n_back_level_entries">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>10</item>
+		<item>11</item>
+		<item>12</item>
+		<item>13</item>
+		<item>14</item>
+		<item>15</item>
+	</string-array>
+	<string-array name="series_length_entries">
+		<item>15</item>
+		<item>20</item>
+		<item>30</item>
+		<item>50</item>
+	</string-array>
+	<string-array name="features_entries">
+		<item>Position</item>
+		<item>Shape</item>
+		<item>Color</item>
+		<item>Sound</item>
+	</string-array>
+	<string-array name="repetition_ratio_entries">
+		<item>30%</item>
+		<item>50%</item>
+		<item>60%</item>
+	</string-array>
+	<string-array name="repetition_ratio_entry_values">
+		<item>30</item>
+		<item>50</item>
+		<item>60</item>
+	</string-array>
+	<string-array name="show_time_entries">
+		<item>0.5s</item>
+		<item>1s</item>
+		<item>1.5s</item>
+		<item>2s</item>
+		<item>2.5s</item>
+	</string-array>
+	<string-array name="show_time_entry_values">
+		<item>500</item>
+		<item>1000</item>
+		<item>1500</item>
+		<item>2000</item>
+		<item>2500</item>
+	</string-array>
+	<string-array name="keyshortcut_entries">
+		<item>A</item>
+		<item>B</item>
+		<item>C</item>
+		<item>D</item>
+		<item>E</item>
+		<item>F</item>
+		<item>G</item>
+		<item>H</item>
+		<item>I</item>
+		<item>J</item>
+		<item>K</item>
+		<item>L</item>
+		<item>M</item>
+		<item>N</item>
+		<item>O</item>
+		<item>P</item>
+		<item>Q</item>
+		<item>R</item>
+		<item>S</item>
+		<item>T</item>
+		<item>U</item>
+		<item>V</item>
+		<item>W</item>
+		<item>X</item>
+		<item>Y</item>
+		<item>Z</item>
+	</string-array>
+	<string-array name="results_options">
+		<item>Show by feature</item>
+		<item>Show all levels</item>
+	</string-array>
+	<string-array name="time_interval_entries">
+		<item>Today</item>
+		<item>Last 7 Days</item>
+		<item>Last 30 Days</item>
+		<item>Total</item>
+	</string-array>
+	<string-array name="time_interval_entry_values">
+	  <item>0</item>
+	  <item>1</item>
+	  <item>2</item>
+	  <item>3</item>
+	</string-array>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">N-Back</string>
+	<string name="features_preference">features_preference</string>
+	<string name="n_back_level_preference">n_back_level_preference</string>
+	<string name="number_of_features_preference">number_of_features_preference</string>
+	<string name="vibrate_on_error_preference">vibrate_on_error</string>
+	<string name="auto_set_level_preference">auto_set_level_preference</string>
+	<string name="series_length_preference">series_length_preference</string>
+	<string name="repetition_ratio_preference">repetition_ratio_preference</string>
+	<string name="time_symbol_shown_preference">time_symbol_shown_preference</string>
+	<string name="time_symbol_hidden_preference">time_symbol_hidden_preference</string>
+	<string name="percent_to_advance_preference">percent_to_advance_preference</string>
+	<string name="percent_to_drop_preference">percent_to_drop_preference</string>
+	<string name="by_feature_percentage_preference">by_feature_percentage_preference</string>
+	<string name="position_keyshortcut_preference">position_keyshortcut_preference</string>
+	<string name="sound_keyshortcut_preference">sound_keyshortcut_preference</string>
+	<string name="shape_keyshortcut_preference">shape_keyshortcut_preference</string>
+	<string name="color_keyshortcut_preference">color_keyshortcut_preference</string>
+	<string name="show_keyshortcuts_preference">show_keyshortcuts_preference</string>
+	<string name="random_targets_preference">random_targets_preference</string>
+	<string name="show_time_statistics_preference">show_time_statistics_preference</string>
+	<string name="time_interval_preference">time_interval_preference</string>
+	<string name="highlight_correctness_preference">highlight_correctness_preference</string>
+	<string name="show_progress_preference">show_results_preference</string>
+	<string name="show_results_for_all_levels">show_results_for_all_levels</string>
+	<string name="show_results_by_feature">show_results_by_feature</string>
+	<string name="default_features">1,1,0,0</string>
+	<!--  localized strings -->
+	<string name="level_advance">You have advanced to level: %d</string>
+	<string name="level_drop">You have fallen to level: %d</string>
+	<string name="close_button_label">Close</string>
+	<string name="sound_initializing_in_process">Initializing sounds</string>
+	<string name="sound_initializing_failure">Could not initialize TextToSpeech engine.\nSounds will be unavailable</string>
+	<string name="settings_menu_option">Settings</string>
+	<string name="instructions_menu_option">Instructions</string>
+	<string name="instructions_text" formatted="false">
+Goal of N-Back game is to improve your working memory and fluid intelligence.\n\nPlaying the game you are presented with a number of series of stimuli of different kind &#8212; e.g. series of positions of a shape, and series of different sounds, presented synchronously in constant rate.\n\nYour task is to decide whether the currently presented stimuli occurred n items back in the series. You can find out what\'s the current value of n by looking at the application\'s title bar.\n\nCurrently the title bar says that the current game mode is \"%game_mode%\". \"%features_adj%\" means that you are presented with %features% series of stimuli (in our case %features_list%), \"%n%-Back\" means that for each item you have to remember what item occurred %n% items back in the series.
+	</string>
+	<string name="new_game_button_label">New</string>
+	<string name="right_answers_label">Right: %d</string>
+	<string name="wrong_answers_label">Wrong: %d</string>
+	<string name="round_number_label">%1$d/%2$d</string>
+    <string name="clear_history">Clear history</string>
+    <string name="clear_history_confirmation">Do you want to erase all your results?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+</resources>
+<!--Match features (position, shape and color) of symbols that show up on the screen with features of ones shown given number of rounds before.-->
